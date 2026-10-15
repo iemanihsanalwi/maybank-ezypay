@@ -42,6 +42,7 @@ import {
   Trash2,
   Compass
 } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 // Import full 22,729 merchant dataset extracted from the 650-page Maybank EzyPay PDF
 import { ALL_EZYPAY_MERCHANTS, RawMerchant } from './all_ezypay_merchants_data';
@@ -2287,6 +2288,7 @@ export default function MaybankEzyPayDirectoryApp() {
         </div>
       </footer>
 
+      <SpeedInsights />
     </div>
   );
 }
